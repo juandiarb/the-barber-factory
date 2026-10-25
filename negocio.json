@@ -1,0 +1,173 @@
+{
+  "nombre": "The Barber Factory",
+  "eyebrow": "Barbería · El Peñón, Cali",
+  "lema": "Estilo, tradición y atención personalizada para hombres.",
+  "titular": "Cada corte cuenta.",
+  "subtitulo": "Barbería exclusiva para hombres en el centro de El Peñón, desde 2016. Corte, barba y afeitado con atención a los detalles.",
+  "meta_descripcion": "The Barber Factory: barbería exclusiva para hombres en El Peñón, Cali, desde 2016. Corte, barba y afeitado. 4.8★ en Google. Reserva tu cita en línea.",
+  "sitio_url": null,
+  "imagen_og": "images/og.jpg",
+
+  "direccion": "Cl. 2 Oe. #1-55",
+  "barrio": "El Peñón",
+  "ciudad": "Cali",
+  "region": "Valle del Cauca",
+  "pais": "CO",
+  "codigo_postal": "760044",
+  "geo": { "lat": 3.4504342, "lng": -76.5414771 },
+  "mapa_busqueda": "The Barber Factory Barbería El Peñón, Cl. 2 Oe. #1-55, Cali",
+  "telefono": "+57 311 529 3383",
+  "whatsapp": "573115293383",
+  "indicativo_pais": "57",
+  "correo": null,
+  "moneda": "COP",
+  "rango_precios": "$$$",
+
+  "legal": { "razon_social": null, "nit": null, "terminos_actualizados": "2026-10-25" },
+
+  "zona_horaria": "America/Bogota",
+  "utc_offset": "-05:00",
+  "horario": [
+    { "etiqueta": "Lunes a sábado", "dias": [0, 1, 2, 3, 4, 5], "abre": "10:00", "cierra": "20:00" },
+    { "etiqueta": "Domingo", "dias": [6], "cerrado": true }
+  ],
+  "horario_corto": "Lun–Sáb 10:00 a.m. – 8:00 p.m.",
+  "intervalo_citas_min": 30,
+  "duraciones_confirmadas": false,
+
+  "redes": {
+    "instagram": "https://www.instagram.com/barberfactorycali/",
+    "facebook": "https://www.facebook.com/thebarberfactorycali/",
+    "tiktok": null
+  },
+  "instagram_usuario": "@barberfactorycali",
+
+  "calificacion": { "valor": 4.8, "total": 269, "fuente": "Google", "consultado": "2026-10-25" },
+  "seguidores": { "valor": 4535, "fuente": "Instagram", "consultado": "2026-10-25" },
+
+  "insignias": [
+    { "icono": "star", "titulo": "4.8 en Google", "texto": "269 reseñas de clientes, consultadas en octubre de 2026." },
+    { "icono": "calendar", "titulo": "Reserva en línea", "texto": "Elige servicio, día y hora desde el celular. Te confirmamos por WhatsApp." },
+    { "icono": "razor", "titulo": "Barba y afeitado", "texto": "Perfilado, afeitado y limpieza facial además del corte." },
+    { "icono": "glass", "titulo": "Bar y deportes", "texto": "Barra, bebidas y el partido en pantalla mientras esperas tu turno." }
+  ],
+
+  "sobre_nosotros": [
+    "The Barber Factory abrió en 2016 como una barbería exclusiva para hombres en el centro del barrio El Peñón, en el oeste de Cali.",
+    "Ladrillo a la vista, piso ajedrezado, una barra con banquetas amarillas y el partido en la pantalla. La idea es simple: estilo, tradición y atención personalizada, con cuidado en cada detalle.",
+    "Muchos de nuestros clientes llevan años con el mismo barbero, y varios traen a toda la familia."
+  ],
+  "nosotros_fotos": [
+    { "src": "images/letrero.webp", "alt": "Letrero iluminado de The Barber Factory con estrellas y tijeras cruzadas", "w": 750, "h": 550 },
+    { "src": "images/clientes-capas.webp", "alt": "Dos clientes con capas negras y amarillas de la barbería mientras los atienden", "w": 1000, "h": 1250 }
+  ],
+  "estadisticas": [
+    { "valor": "2016", "etiqueta": "Año de apertura en El Peñón", "contar": false },
+    { "valor": "4.8", "etiqueta": "Calificación en Google" },
+    { "valor": "269", "etiqueta": "Reseñas en Google" },
+    { "valor": "4535", "etiqueta": "Seguidores en Instagram" },
+    { "valor": "{servicios}", "etiqueta": "Servicios en el catálogo" }
+  ],
+  "estadisticas_nota": "Cifras de Google e Instagram consultadas el 25 de octubre de 2026.",
+
+  "categorias": ["Cortes", "Barba", "Facial"],
+  "servicios": [
+    { "nombre": "Corte clásico", "descripcion": "Corte de cabello a tu estilo.", "precio": null, "precio_desde": false, "duracion": 40, "categorias": ["Cortes"], "foto": "corte" },
+    { "nombre": "Solo barba", "descripcion": "Perfilado y arreglo de barba.", "precio": null, "precio_desde": false, "duracion": 30, "categorias": ["Barba"], "foto": "barba" },
+    { "nombre": "Corte y barba", "descripcion": "Corte de cabello más arreglo de barba.", "precio": null, "precio_desde": false, "duracion": 60, "categorias": ["Cortes", "Barba"], "foto": "corte" },
+    { "nombre": "Corte y afeitado", "descripcion": "Corte de cabello más afeitado.", "precio": null, "precio_desde": false, "duracion": 60, "categorias": ["Cortes", "Barba"], "foto": "afeitado" },
+    { "nombre": "Afeitado", "descripcion": "Afeitado con navaja.", "precio": null, "precio_desde": false, "duracion": 30, "categorias": ["Barba"], "foto": "afeitado" },
+    { "nombre": "Limpieza facial", "descripcion": "Limpieza y mascarilla facial.", "precio": null, "precio_desde": false, "duracion": 40, "categorias": ["Facial"], "foto": "facial" },
+    { "nombre": "Corte y alisado", "descripcion": "Corte de cabello más alisado.", "precio": null, "precio_desde": false, "duracion": 90, "categorias": ["Cortes"], "foto": "corte" },
+    { "nombre": "Depilación con cera", "descripcion": "Depilación con cera de zonas del rostro.", "precio": null, "precio_desde": false, "duracion": 15, "categorias": ["Facial"], "foto": "facial" }
+  ],
+  "fotos_servicio": {
+    "corte": "images/clientes-capas.webp",
+    "barba": "images/barba-relax.webp",
+    "afeitado": "images/afeitado.webp",
+    "facial": "images/barba-relax.webp"
+  },
+  "precio_nulo_texto": "Precio en barbería",
+
+  "profesionales": [
+    { "nombre": "Bryam Agudelo", "cargo": "Barbero", "color": "#F2C230", "sedes": ["El Peñón"] }
+  ],
+
+  "sedes": [
+    {
+      "nombre": "El Peñón",
+      "direccion": "Cl. 2 Oe. #1-55, El Peñón, Cali",
+      "horario": [
+        { "etiqueta": "Lunes a sábado", "dias": [0, 1, 2, 3, 4, 5], "abre": "10:00", "cierra": "20:00" },
+        { "etiqueta": "Domingo", "dias": [6], "cerrado": true }
+      ],
+      "horario_corto": "Lun–Sáb 10:00 a.m. – 8:00 p.m.",
+      "mapa_busqueda": "The Barber Factory Barbería El Peñón, Cl. 2 Oe. #1-55, Cali",
+      "principal": true,
+      "nueva": false
+    }
+  ],
+
+  "hero_foto": "images/bar-letrero.webp",
+  "hero_fotos": [
+    { "src": "images/bar-letrero.webp", "alt": "Barra de The Barber Factory con el letrero de bombillos BARBER Factory y banquetas amarillas", "w": 1200, "h": 1600 },
+    { "src": "images/barba-relax.webp", "alt": "Cliente con barba recostado en la silla con capa negra y amarilla", "w": 1000, "h": 1333 },
+    { "src": "images/fachada.webp", "alt": "Fachada de la barbería con el poste de barbero y el letrero The Barber Factory", "w": 1400, "h": 1050 }
+  ],
+  "fotos_son_de_referencia": false,
+
+  "galeria": [
+    { "src": "images/afeitado.webp", "alt": "Barbero afeitando a un cliente recostado en la silla", "titulo": "Afeitado", "w": 900, "h": 1600 },
+    { "src": "images/panoramica.webp", "alt": "Vista panorámica del salón con sillas de barbero, ladrillo y pantallas", "titulo": "El salón", "w": 1600, "h": 721 },
+    { "src": "images/sala-bar.webp", "alt": "Zona de espera con tapete, sillón de cuero y la barra al fondo", "titulo": "La barra", "w": 900, "h": 1600 },
+    { "src": "images/clientes-capas.webp", "alt": "Clientes leyendo el periódico mientras los atienden", "titulo": "En la silla", "w": 1000, "h": 1250 },
+    { "src": "images/vitrina.webp", "alt": "Vitrina con jarras de cerveza, calaveras y objetos de colección", "titulo": "La vitrina", "w": 1000, "h": 1328 },
+    { "src": "images/ladrillo-retratos.webp", "alt": "Pared de ladrillo con tres retratos en blanco y negro", "titulo": "Ladrillo y retratos", "w": 1000, "h": 1328 },
+    { "src": "images/entrada.webp", "alt": "Entrada de la barbería con el letrero y el poste de barbero", "titulo": "La entrada", "w": 1400, "h": 1050 },
+    { "src": "images/barba-relax.webp", "alt": "Cliente con barba recién arreglada descansando en la silla", "titulo": "Barba", "w": 1000, "h": 1333 }
+  ],
+  "galeria_nota": "Fotos del local publicadas en el perfil de Google Maps de The Barber Factory.",
+
+  "testimonios": [
+    { "texto": "He ido por años. La relación con mi barbero es la más estable que he tenido en la vida", "autor": "Jose B.", "fuente": "Google (5/5)" },
+    { "texto": "8 años sin visitar una barbería o peluquería diferente, creo que hablan más que las 5 estrellas. Un lugar con un ambiente excepcional, personal amable, deportes, bebidas. Excelente y super recomendado.", "autor": "Andres Felipe R.", "fuente": "Google (5/5)" },
+    { "texto": "Excelente atención, la mejor barbería de Cali. Todos los hombres de mi familia; mi papá, mis hermanos, mi esposo, mi cuñado, mi abuelo y mis primos cortan su cabello acá y de verdad que quedan guapos y bellos. […]", "autor": "Valeria C.", "fuente": "Google (5/5)" },
+    { "texto": "La experiencia siempre ha sido excelente: combinan profesionalismo, innovación y un trato amable que te hace sentir como en casa. […] los precios son justos y accesibles.", "autor": "Xhevi L.", "fuente": "Google (5/5)" },
+    { "texto": "Excelente sitio buena ubicación. Dato pregunten por William !", "autor": "Alejandro R.", "fuente": "Google (5/5)" }
+  ],
+  "testimonios_nota": "Reseñas públicas de Google Maps, citadas textualmente ([…] indica texto omitido). Consultadas el 25 de octubre de 2026.",
+
+  "franja": ["Corte clásico", "Barba", "Afeitado", "Limpieza facial", "Cada corte cuenta", "El Peñón · Cali", "Since 2016"],
+
+  "logo": null,
+  "promo_whatsapp_mensaje": "Hola, vi la página de The Barber Factory y quiero saber de sus promociones.",
+  "reserva_whatsapp_mensaje": "Hola, quiero reservar una cita en The Barber Factory.",
+
+  "_fuentes": [
+    "https://www.google.com/maps/?cid=2675026543724951253 (nombre, dirección Cl. 2 Oe. #1-55 Comuna 3, coordenadas, teléfono 311 529 3383, horario lun–sáb 10:00–20:00 y domingo cerrado, calificación 4.8 con 269 reseñas, 5 reseñas citadas, 10 fotos del local y la pizarra de servicios; consultado 2026-10-25)",
+    "http://bit.ly/3is550N (enlace del perfil de Google: redirige a WhatsApp 573115293383; consultado 2026-10-25)",
+    "https://www.instagram.com/barberfactorycali/ (nombre «The barber factory · Since 2016», bio «BARBERIA EXCLUSIVA – El Peñón / Estilo, tradición y atención personalizada para hombres», 4.535 seguidores, enlace wa.link/imzjn6 → WhatsApp 573115293383 «Hola, quiero reservar»; publicación del 20-oct-2026 «Nuestro artista de la casa @bryam_agudelo»; consultado 2026-10-25)",
+    "https://www.facebook.com/thebarberfactorycali/ (descripción «exclusiva barbería para hombres, ubicada en el centro del barrio el Peñón», dirección «Cra 2 Oeste #1-55», 1,1 mil seguidores, 96 % de recomendación en 24 opiniones, rango de precios $$$, frase «Atención a los detalles, siempre con estilo. Cada corte cuenta.», publicación «Nuestro artista de la casa Bryam Agudelo»; consultado 2026-10-25)",
+    "https://co.todosnegocios.com/the-barber-factory-%7C-barber%C3%ADa-el-pe%C3%B1%C3%B3n (código postal 760044, teléfono fijo antiguo (2) 3743464, correo antiguo marcado como inexistente; consultado 2026-10-25)",
+    "Pizarra de precios visible en la foto de la barra (Google Maps): nombres de servicios legibles (Corte clásico, Solo barba, Corte & barba, Corte & afeitado, Afeitado, Limpieza facial, Corte & alisado, Depilación con cera). Los precios no se leen.",
+    "https://www.instagram.com/thebarberfactorycali_oeste/ y https://www.instagram.com/thebarberfactory_cali/ (enlaces entregados: «Perfil no disponible» el 2026-10-25)",
+    "https://foursquare.com/v/the-barber-factory/596127be1987ec54682f9213 (pide iniciar sesión; sin datos nuevos)"
+  ],
+  "_pendientes": [
+    "PRECIOS: no hay precios públicos legibles. Todos los servicios muestran «Precio en barbería» hasta que el cliente envíe su lista (se cargan en Intranet → Catálogo).",
+    "DURACIONES: las duraciones de cada servicio son estimadas (solo se usan para calcular las horas libres y no se muestran en el sitio). Confirmar y poner duraciones_confirmadas en true.",
+    "CATÁLOGO: confirmar los nombres de servicios leídos en la pizarra y si hay otros (p. ej. masaje: se menciona en 13 reseñas de Google).",
+    "DIRECCIÓN: Google dice «Cl. 2 Oe. #1-55» y Facebook «Cra 2 Oeste #1-55». Confirmar la correcta.",
+    "HORARIO: Google dice lun–sáb hasta las 8:00 p.m.; un directorio dice hasta las 9:00 p.m. Confirmar.",
+    "SEDES: los dos Instagram entregados (@thebarberfactorycali_oeste y @thebarberfactory_cali) no están disponibles. Confirmar si hay otra sede y cuál es la cuenta oficial (la verificada es @barberfactorycali).",
+    "EQUIPO: solo Bryam Agudelo aparece como «artista de la casa» (oct-2026). En reseñas o publicaciones también aparecen William, Rubén (@ruben_1317) y Miler Calero (@milercalero13). Confirmar el equipo actual y sus colores.",
+    "POLÍTICA DE RESERVAS: /terminos propone avisar 2 horas antes para cancelar y 10 minutos de tolerancia por llegada tarde. Son valores sugeridos: confirmar con el negocio.",
+    "LEGAL: razón social y NIT no aparecen en fuentes públicas (Ley 1480 de 2011, art. 50). Se muestran como «en actualización» en /terminos.",
+    "CORREO: no hay correo vigente para PQR (el antiguo info@thebarberfactory.com.co figura como inexistente).",
+    "TELÉFONO FIJO: el directorio muestra (2) 3743464 (hoy sería 602 374 3464). Confirmar si sigue activo; por ahora no se publica.",
+    "RESEÑAS: confirmar permiso para citar las 5 reseñas de Google y actualizar calificación (4.8 / 269) y seguidores (4.535), consultados el 2026-10-25.",
+    "FOTOS: las fotos salen del perfil de Google Maps (pueden ser de clientes). Pedir originales en alta resolución y autorización de uso.",
+    "LOGO: no hay archivo de logo; el sitio usa una versión tipográfica basada en el letrero. Pedir el logo en vector (SVG/AI) o PNG transparente.",
+    "DOMINIO: definir dominio propio y luego llenar sitio_url (activa canonical y og:url)."
+  ]
+}

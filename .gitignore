@@ -1,0 +1,17 @@
+# Base de datos (datos reales de clientes: nunca al repositorio)
+data.db*
+*.db
+*.db-wal
+*.db-shm
+
+# Token de Google Calendar y variables locales
+google_token.json
+server/google_token.json
+.env
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Carpeta de herramientas del editor/agente
+.claude/

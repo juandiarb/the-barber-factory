@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{nombre}} · Barbería en {{ciudad}} · Corte, barba y afeitado</title>
+  <meta name="description" content="{{meta_descripcion}}">
+  <meta name="theme-color" content="#121110">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="{{nombre}}">
+  <meta property="og:title" content="{{nombre}} · Barbería en El Peñón, {{ciudad}}">
+  <meta property="og:description" content="{{meta_descripcion}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{nombre}} · Barbería en {{ciudad}}">
+  <meta name="twitter:description" content="{{meta_descripcion}}">
+  {{head_extra}}
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Rye&family=Saira+Stencil+One&family=Yellowtail&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/{{hero_foto_1}}">
+  <script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.6l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/></symbol>
+      <symbol id="i-razor" viewBox="0 0 24 24"><path d="M3 15.5L14.5 4c1 1.6 1.2 3.7.2 5.4L9.3 15.5z"/><path d="M9.3 15.5l1.9 1.9M11.2 17.4l5.6 3.1a1.6 1.6 0 0 0 2.1-2.1l-3.1-5.6"/></symbol>
+      <symbol id="i-glass" viewBox="0 0 24 24"><path d="M5 6h10v13a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 5 19z"/><path d="M15 9h2.5A1.5 1.5 0 0 1 19 10.5v4a1.5 1.5 0 0 1-1.5 1.5H15M5 6c0-2 1.6-3 3-2.5C9 2.4 11.4 2.2 12.5 3.6 14 3.3 15.3 4.4 15 6M8.5 10v6M11.5 10v6"/></symbol>
+      <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.7"/><circle cx="6" cy="17" r="2.7"/><path d="M8.3 8.5L20 17M8.3 15.5L20 7"/></symbol>
+      <symbol id="i-beard" viewBox="0 0 24 24"><path d="M5 8c0 0-.3 4.4 1.5 7.6C8 18.4 10 20.5 12 20.5s4-2.1 5.5-4.9C19.3 12.4 19 8 19 8"/><path d="M8.5 13.5c1-.9 2.2-1.3 3.5-1.3s2.5.4 3.5 1.3M10 16.5h4M5 8V5.5M19 8V5.5"/></symbol>
+      <symbol id="i-towel" viewBox="0 0 24 24"><path d="M4 8.5a3.5 3.5 0 0 1 7 0V19H4z"/><path d="M7.5 5H18a2 2 0 0 1 2 2v12h-9M14 9c.6-.7.6-1.6 0-2.3M17 9c.6-.7.6-1.6 0-2.3"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5s6 6.6 6 10.8a6 6 0 0 1-12 0C6 10.1 12 3.5 12 3.5z"/><path d="M9.3 14.6a2.8 2.8 0 0 0 2.7 2.7"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.4a11 11 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4.5 19.5l1.2-3.9A8 8 0 1 1 8.6 18.4z"/><path d="M9.2 8.3c.2-.4.6-.5 1-.3l.9 1.6c.1.3 0 .6-.2.8l-.5.5c.5 1.1 1.4 2 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.6.9c.3.2.4.6.2 1-.6 1.1-1.8 1.4-3 .9a8 8 0 0 1-4.1-4.1c-.5-1.2-.2-2.4.3-3.1z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><path d="M17 7h.01"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-7.5h2.6l.4-3H14V8.7c0-.9.3-1.5 1.6-1.5H17V4.5a19 19 0 0 0-2.3-.1c-2.3 0-3.8 1.4-3.8 3.9v2.2H8.3v3H11V21"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l4.5 4.5 10.5-10.5"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 15.5H3z"/><path d="M12 10v4M12 17h.01"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="1.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="intro" id="intro" hidden>
+    <div class="intro-badge" aria-hidden="true">
+      <span class="intro-stars">★ The ★</span>
+      <span class="intro-barber">Barber</span>
+      <span class="intro-factory">Factory</span>
+    </div>
+    <p class="intro-skip">Toca o presiona Enter para entrar</p>
+  </div>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar">
+    <div class="wrap topbar-in">
+      <span class="topbar-item"><svg class="ic"><use href="#i-pin"/></svg>{{direccion_completa}}</span>
+      <span class="topbar-item"><svg class="ic"><use href="#i-clock"/></svg>{{horario_corto}}</span>
+      <a class="topbar-item" href="{{telefono_href}}"><svg class="ic"><use href="#i-phone"/></svg>{{telefono}}</a>
+      <span class="topbar-social">
+        <a href="{{instagram}}" target="_blank" rel="noopener" data-requires="instagram" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a>
+        <a href="{{facebook}}" target="_blank" rel="noopener" data-requires="facebook" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a>
+        <a class="topbar-team" href="/intranet"><svg class="ic"><use href="#i-lock"/></svg>Acceso equipo</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#inicio" aria-label="{{nombre}}, ir al inicio">
+        <span class="brand-badge" aria-hidden="true">
+          <span class="brand-top">★ {{nombre_1}} ★</span>
+          <span class="brand-bottom">{{nombre_2}}</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span><span class="sr-only">Abrir menú</span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#sedes">Sedes</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#reservar">Reservar cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="eyebrow">{{eyebrow}}</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="bulbs" aria-hidden="true"></span>
+            <span class="hero-name">{{nombre_1}}</span>
+            <span class="hero-neon">{{nombre_2}}</span>
+            <span class="bulbs" aria-hidden="true"></span>
+          </h1>
+          <p class="hero-lema">{{lema}}</p>
+          <p class="hero-titular">{{titular}}</p>
+          <p class="hero-sub">{{subtitulo}}</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#reservar">Reservar cita</a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+          <a class="hero-rating" data-requires="rating" href="#resenas">
+            <svg class="ic ic-fill"><use href="#i-star"/></svg>
+            <strong>{{rating_valor}}</strong> en {{rating_fuente}} · {{rating_total}} reseñas
+          </a>
+        </div>
+        <div class="hero-collage" aria-hidden="false">
+          <figure class="hc hc-1" data-parallax="0.06"><img src="/{{hero_foto_1}}" alt="{{hero_foto_1_alt}}" width="{{hero_foto_1_w}}" height="{{hero_foto_1_h}}" fetchpriority="high"></figure>
+          <figure class="hc hc-2" data-parallax="-0.04"><img src="/{{hero_foto_2}}" alt="{{hero_foto_2_alt}}" width="{{hero_foto_2_w}}" height="{{hero_foto_2_h}}"></figure>
+          <figure class="hc hc-3" data-parallax="0.09"><img src="/{{hero_foto_3}}" alt="{{hero_foto_3_alt}}" width="{{hero_foto_3_w}}" height="{{hero_foto_3_h}}"></figure>
+          <p class="ref-note" id="refNote" hidden>Fotos de referencia</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="franja" aria-hidden="true">
+      <div class="franja-track" id="franja"></div>
+    </div>
+
+    <section class="section insignias" aria-label="Por qué elegirnos">
+      <div class="wrap">
+        <ul class="badges" id="insignias"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">El catálogo</p>
+          <h2 id="servicios-title">Servicios</h2>
+          <p class="section-intro">Toca un servicio para reservarlo. <span id="priceNote"></span></p>
+        </header>
+        <div class="filters" id="filters" role="group" aria-label="Filtrar servicios por categoría"></div>
+        <ul class="services" id="services">{{services_html}}</ul>
+        <div class="services-more">
+          <button class="btn btn-ghost" id="servicesMore" type="button" hidden></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reserve" id="reservar" aria-labelledby="reservar-title">
+      <div class="hazard" aria-hidden="true"></div>
+      <div class="wrap reserve-in">
+        <div class="reserve-info">
+          <p class="eyebrow">Reserva en línea</p>
+          <h2 id="reservar-title">Aparta tu silla</h2>
+          <ol class="steps">
+            <li><span class="step-n">01</span><div><strong>Elige el servicio</strong><p>Y si quieres, el barbero.</p></div></li>
+            <li><span class="step-n">02</span><div><strong>Escoge día y hora</strong><p>Solo ves las horas libres.</p></div></li>
+            <li><span class="step-n">03</span><div><strong>Te confirmamos</strong><p>Por teléfono o WhatsApp.</p></div></li>
+          </ol>
+          <div class="reserve-alt">
+            <p>¿Prefieres escribir?</p>
+            <a class="btn btn-ghost" href="{{whatsapp_url}}" target="_blank" rel="noopener" data-requires="whatsapp"><svg class="ic"><use href="#i-whatsapp"/></svg>Reserva por WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="booking ticket" id="booking" novalidate>
+          <div class="ticket-in">
+            <div class="field">
+              <label for="b-name">Nombre</label>
+              <input id="b-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="b-phone">Teléfono / WhatsApp</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" required placeholder="Ej.: 300 123 4567">
+            </div>
+            <div class="field" id="sedeField" hidden>
+              <label for="b-sede">Sede</label>
+              <select id="b-sede" name="sede"></select>
+            </div>
+            <div class="field">
+              <label for="b-service">Servicio</label>
+              <select id="b-service" name="service_id" required>
+                <option value="">Elige un servicio</option>
+                {{service_options}}
+              </select>
+            </div>
+            <div class="field" id="staffField" hidden>
+              <label for="b-staff">Barbero <span class="opt">(opcional)</span></label>
+              <select id="b-staff" name="staff_id"><option value="">Sin preferencia</option></select>
+            </div>
+            <div class="field">
+              <label for="b-date">Fecha</label>
+              <input id="b-date" name="date" type="date" required>
+            </div>
+            <fieldset class="field times-field">
+              <legend>Hora</legend>
+              <div class="times" id="times" role="radiogroup" aria-describedby="timesHelp"></div>
+              <p class="help" id="timesHelp" aria-live="polite">Elige primero el servicio y la fecha.</p>
+            </fieldset>
+            <div class="field">
+              <label for="b-notes">Notas <span class="opt">(opcional)</span></label>
+              <textarea id="b-notes" name="notes" rows="2" maxlength="300" placeholder="Algo que debamos saber"></textarea>
+            </div>
+            <div class="check">
+              <input id="b-terms" name="accept_terms" type="checkbox" required>
+              <label for="b-terms">Acepto los <a href="/terminos" target="_blank" rel="noopener">términos y condiciones</a> y autorizo el tratamiento de mis datos personales según la política de datos.</label>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit" id="bookingSubmit">Reservar cita</button>
+            <div class="form-msg" id="bookingMsg" role="status" aria-live="polite" tabindex="-1"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="wrap about-in">
+        <div class="about-photos" id="aboutPhotos"></div>
+        <div class="about-copy">
+          <p class="eyebrow">Desde 2016</p>
+          <h2 id="nosotros-title">Nosotros</h2>
+          <div id="aboutText"></div>
+          <dl class="stats" id="stats"></dl>
+          <p class="note" id="statsNote"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria" aria-labelledby="galeria-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">El taller</p>
+          <h2 id="galeria-title">Galería</h2>
+        </header>
+        <ul class="gallery" id="gallery"></ul>
+        <p class="note" id="galleryNote"></p>
+      </div>
+    </section>
+
+    <section class="section reviews" id="resenas" aria-labelledby="resenas-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow" data-requires="rating">{{rating_valor}} ★ · {{rating_total}} reseñas en {{rating_fuente}}</p>
+          <h2 id="resenas-title">Lo que dicen</h2>
+        </header>
+        <div class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Reseñas de clientes">
+          <button class="car-btn car-prev" type="button" aria-label="Reseña anterior"><svg class="ic"><use href="#i-left"/></svg></button>
+          <div class="car-viewport"><ul class="car-track" id="carTrack"></ul></div>
+          <button class="car-btn car-next" type="button" aria-label="Reseña siguiente"><svg class="ic"><use href="#i-right"/></svg></button>
+        </div>
+        <div class="car-dots" id="carDots" role="group" aria-label="Elegir reseña"></div>
+        <p class="note" id="reviewsNote"></p>
+      </div>
+    </section>
+
+    <section class="section" id="sedes" aria-labelledby="sedes-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Encuéntranos</p>
+          <h2 id="sedes-title">Sedes y contacto</h2>
+        </header>
+        <div class="contact">
+          <div class="contact-cards">
+            <div id="sedesList"></div>
+            <div class="hours ticket">
+              <div class="ticket-in">
+                <div class="hours-head">
+                  <h3>Horario</h3>
+                  <span class="open-badge" id="openBadge"></span>
+                </div>
+                <ul class="hours-list" id="hoursList"></ul>
+              </div>
+            </div>
+            <ul class="contact-links">
+              <li><a href="{{telefono_href}}"><svg class="ic"><use href="#i-phone"/></svg>{{telefono}}</a></li>
+              <li data-requires="whatsapp"><a href="{{whatsapp_url}}" target="_blank" rel="noopener"><svg class="ic"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>
+              <li data-requires="instagram"><a href="{{instagram}}" target="_blank" rel="noopener"><svg class="ic"><use href="#i-instagram"/></svg>{{instagram_usuario}}</a></li>
+              <li data-requires="facebook"><a href="{{facebook}}" target="_blank" rel="noopener"><svg class="ic"><use href="#i-facebook"/></svg>Facebook</a></li>
+            </ul>
+          </div>
+          <div class="map">
+            <iframe id="mapFrame" title="Mapa de {{nombre}}" src="{{mapa_url}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <a class="map-link" id="mapLink" href="{{mapa_link}}" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="hazard hazard-thin" aria-hidden="true"></div>
+    <div class="wrap footer-in">
+      <div>
+        <span class="brand-badge brand-badge--lg" aria-hidden="true">
+          <span class="brand-top">★ {{nombre_1}} ★</span>
+          <span class="brand-bottom">{{nombre_2}}</span>
+        </span>
+        <p class="footer-lema">{{lema}}</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <ul class="footer-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#sedes">Contacto</a></li>
+          <li><a href="/terminos">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© <span id="year">{{anio}}</span> {{nombre}} · {{direccion_completa}}</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="{{whatsapp_url}}" target="_blank" rel="noopener" data-requires="whatsapp" aria-label="Escríbenos por WhatsApp">
+    <svg class="ic"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+    <button class="lb-close" type="button" aria-label="Cerrar"><svg class="ic"><use href="#i-close"/></svg></button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Foto anterior"><svg class="ic"><use href="#i-left"/></svg></button>
+    <figure class="lb-fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Foto siguiente"><svg class="ic"><use href="#i-right"/></svg></button>
+  </dialog>
+
+  <script type="application/json" id="negocio">{{business_json}}</script>
+  <script src="/js/intro.js"></script>
+  <script src="/js/script.js" defer></script>
+</body>
+</html>

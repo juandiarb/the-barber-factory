@@ -1,0 +1,32 @@
+# Render (plan gratis). Ver README: el servicio "duerme" tras ~15 min sin
+# visitas y, sin disco persistente, la base SQLite se borra al reiniciar.
+services:
+  - type: web
+    name: the-barber-factory
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python3 server/app.py
+    healthCheckPath: /api/services/public
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: ADMIN_USER
+        value: admin
+      # Render genera una clave aleatoria; se ve en el panel (Environment).
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DB_PATH
+        sync: false
+      - key: SITE_URL
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REFRESH_TOKEN
+        sync: false
+      - key: GOOGLE_CALENDAR_ID
+        sync: false

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Intranet · {{nombre}}</title>
+  <meta name="theme-color" content="#121110">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Rye&family=Saira+Stencil+One&family=Yellowtail&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/intranet.css">
+  <script src="/js/intranet.js" defer></script>
+</head>
+<body class="intranet">
+  <main id="login-view" class="login" hidden>
+    <div class="hazard" aria-hidden="true"></div>
+    <form id="login-form" class="login-card ticket" novalidate>
+      <div class="ticket-in">
+        <span class="brand-badge brand-badge--lg" aria-hidden="true">
+          <span class="brand-top">★ {{nombre_1}} ★</span>
+          <span class="brand-bottom">{{nombre_2}}</span>
+        </span>
+        <h1>Intranet del equipo</h1>
+        <div class="field">
+          <label for="login-user">Usuario</label>
+          <input id="login-user" name="username" type="text" autocomplete="username" maxlength="80" required>
+        </div>
+        <div class="field">
+          <label for="login-pass">Contraseña</label>
+          <input id="login-pass" name="password" type="password" autocomplete="current-password" maxlength="200" required>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+        <p id="login-error" class="login-error" role="alert" aria-live="assertive"></p>
+        <p><a class="back-link" href="/">← Volver al sitio</a></p>
+      </div>
+    </form>
+  </main>
+
+  <div id="app-view" class="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="brand" href="/" aria-label="Ir al sitio de {{nombre}}">
+          <span class="brand-badge" aria-hidden="true">
+            <span class="brand-top">★ {{nombre_1}} ★</span>
+            <span class="brand-bottom">{{nombre_2}}</span>
+          </span>
+        </a>
+        <button class="side-toggle" id="sideToggle" type="button" aria-expanded="false" aria-controls="side-nav-wrap">Menú</button>
+      </div>
+      <div class="side-nav-wrap" id="side-nav-wrap">
+        <nav aria-label="Módulos">
+          <ul id="side-nav" class="side-nav">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#personal">Personal</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#inventario">Inventario</a></li>
+            <li><a href="#gastos">Gastos</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#descuentos">Descuentos</a></li>
+          </ul>
+        </nav>
+        <div class="side-user">
+          <span id="current-user"></span>
+          <button id="logout-btn" class="btn btn-ghost btn-sm" type="button">Cerrar sesión</button>
+        </div>
+      </div>
+    </aside>
+    <main id="view" class="view" tabindex="-1">
+      <div class="view-head">
+        <h1 id="view-title">Dashboard</h1>
+        <div id="view-actions" class="view-actions"></div>
+      </div>
+      <div id="view-body"></div>
+    </main>
+  </div>
+
+  <dialog id="modal" class="modal" aria-labelledby="modal-title">
+    <form id="modal-form" novalidate>
+      <div class="modal-head">
+        <h2 id="modal-title"></h2>
+        <button type="button" class="modal-x" data-close aria-label="Cerrar">×</button>
+      </div>
+      <div id="modal-fields" class="modal-fields"></div>
+      <p id="modal-error" class="login-error" role="alert"></p>
+      <div class="modal-buttons">
+        <button type="button" class="btn btn-ghost" data-close>Cancelar</button>
+        <button type="submit" class="btn btn-primary" id="modal-save">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="application/json" id="negocio">{{business_json}}</script>
+</body>
+</html>
