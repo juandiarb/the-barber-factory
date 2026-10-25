@@ -13,9 +13,9 @@ services:
         value: 3.11.9
       - key: ADMIN_USER
         value: admin
-      # Render genera una clave aleatoria; se ve en el panel (Environment).
-      - key: ADMIN_PASSWORD
-        generateValue: true
+      # Sin ADMIN_PASSWORD la intranet queda con admin / admin (decisión del
+      # cliente para la demo). Para cambiarla, agrega ADMIN_PASSWORD en el
+      # panel de Render (Environment) y redespliega.
       - key: SESSION_SECRET
         generateValue: true
       - key: DB_PATH

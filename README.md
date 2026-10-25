@@ -14,7 +14,7 @@ Abre <http://localhost:8895> (sitio), <http://localhost:8895/intranet> (intranet
 
 - El puerto sale de `PORT` (por defecto **8895**, para no chocar con los otros proyectos de la carpeta). Escucha en `0.0.0.0`.
 - La base se crea sola en `server/data.db` (o donde diga `DB_PATH`) y se siembra con los servicios y el equipo de `negocio.json`.
-- **Usuario de la intranet en local: `admin` / `admin`. Esa clave es pública: SOLO sirve para probar en tu computador. En producción define `ADMIN_PASSWORD` (Render la genera sola).**
+- **Usuario de la intranet: `admin` / `admin`, en local y también en Render (así lo pidió el negocio para la demo). Es una clave pública: cualquiera que entre a `/intranet` puede adivinarla y ver nombres y teléfonos de clientes. Antes de usarla con clientes reales, define `ADMIN_PASSWORD` en Render → Environment.**
 
 ## Cambiar de negocio
 
@@ -99,8 +99,8 @@ Cada reserva puede crear un evento en el calendario del negocio y en el del prof
 ## Despliegue en Render
 
 1. Sube el repositorio a GitHub.
-2. En Render: **New → Blueprint** y elige el repositorio. `render.yaml` crea el servicio web gratis y genera `ADMIN_PASSWORD` y `SESSION_SECRET`.
-3. La contraseña de la intranet está en el panel de Render → el servicio → **Environment** → `ADMIN_PASSWORD`.
+2. En Render: **New → Blueprint** y elige el repositorio. `render.yaml` crea el servicio web gratis y genera `SESSION_SECRET`.
+3. La intranet arranca con `admin` / `admin`. Para cambiar la clave, agrega `ADMIN_PASSWORD` en el panel de Render → el servicio → **Environment** y redespliega: se aplica en cada arranque.
 4. Cuando tengas dominio, define `SITE_URL` (y `sitio_url` en `negocio.json`) para el canonical y el sitemap.
 
 ### Límites del plan gratis (importante)
